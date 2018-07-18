@@ -1,0 +1,12 @@
+after_script:
+  - npm run report-coverage
+before_script:
+  - npm install -g codecov
+branches:
+  only:
+    - master
+language: node_js
+node_js:
+  - "node"
+  - "8"
+sudo: false

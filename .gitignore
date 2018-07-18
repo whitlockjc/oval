@@ -1,0 +1,16 @@
+**/node_modules/
+**/npm-debug.log
+*-debug.log
+*-error.log
+*.iml
+.idea/
+.tern-project
+.vscode/
+/.nyc_output
+/dist
+/tmp
+/yarn.lock
+coverage/
+coverage.lcov
+jsconfig.json
+node_modules
