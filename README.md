@@ -11,6 +11,14 @@ oval: CLI for (O)penAPI Specification document (val)idation
 [![Downloads/week](https://img.shields.io/npm/dw/oval.svg)](https://npmjs.org/package/oval)
 [![License](https://img.shields.io/npm/l/oval.svg)](https://github.com/whitlockjc/oval/blob/master/package.json)
 
+# Overview
+
+`oval` is an OpenAPI Specification _(OAS)_ document validator that was built to replace the CLI provided by
+[swagger-tools](https://github.com/apigee-127/swagger-tools).  `oval` is built on top of
+[sway](https://github.com/apigee-127/sway), the successor to the API portion of `swagger-tools`, which provides
+extremely thorough OAS validation.  Plans for `oval` are to provide an [eslint](https://eslint.org/)-like experience for
+OAS validation in the future.
+
 <!-- toc -->
 * [Usage](#usage)
 * [Commands](#commands)
@@ -22,7 +30,7 @@ $ npm install -g oval
 $ oval COMMAND
 running command...
 $ oval (-v|--version|version)
-oval/0.0.1 darwin-x64 node-v8.3.0
+oval/1.0.0 darwin-x64 node-v8.3.0
 $ oval --help [COMMAND]
 USAGE
   $ oval COMMAND
@@ -69,5 +77,5 @@ OPTIONS
   -w, --warnings-as-errors  treat warnings as errors
 ```
 
-_See code: [lib/commands/validate.js](https://github.com/whitlockjc/oval/blob/v0.0.1/lib/commands/validate.js)_
+_See code: [lib/commands/validate.js](https://github.com/whitlockjc/oval/blob/v1.0.0/lib/commands/validate.js)_
 <!-- commandsstop -->
