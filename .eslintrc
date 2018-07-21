@@ -1,3 +1,13 @@
-{
-  "extends": "oclif"
-}
+# ESLint
+#
+#   Configuration: http://eslint.org/docs/user-guide/configuring
+#   Rules: http://eslint.org/docs/rules/
+extends: oclif
+rules:
+  indent: [error, 2]
+  no-console: 0
+  no-process-exit: 0
+  max-nested-callbacks: [error, 8]
+  quotes: [2, single, avoid-escape]
+  space-before-function-paren: [error, always]
+  unicorn/no-process-exit: 0

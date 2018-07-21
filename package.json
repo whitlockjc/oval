@@ -10,17 +10,21 @@
   "dependencies": {
     "@oclif/command": "^1.4.35",
     "@oclif/config": "^1.6.33",
-    "@oclif/plugin-help": "^2.0.5"
+    "@oclif/plugin-help": "^2.0.5",
+    "chalk": "^2.4.1",
+    "json-refs": "^3.0.6",
+    "sway": "^2.0.0"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1.15.4",
-    "@oclif/test": "^1.1.0",
     "chai": "^4.1.2",
+    "chai-string": "^1.4.0",
     "eslint": "^4.19.1",
     "eslint-config-oclif": "^1.5.1",
     "globby": "^8.0.1",
     "mocha": "^5.2.0",
-    "nyc": "^12.0.2"
+    "nyc": "^12.0.2",
+    "tmp": "0.0.33"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -34,7 +38,11 @@
   ],
   "homepage": "https://github.com/whitlockjc/oval",
   "keywords": [
-    "cli", "oai", "oas", "oclif", "openapi"
+    "cli",
+    "oai",
+    "oas",
+    "oclif",
+    "openapi"
   ],
   "license": "MIT",
   "main": "lib/index.js",
@@ -49,7 +57,7 @@
   "scripts": {
     "clean": "rm -fR .nyc_output coverage.lcov",
     "postpack": "rm -f oclif.manifest.json npm-shrinkwrap.json",
-    "posttest": "eslint .",
+    "pretest": "eslint .",
     "prepack": "oclif-dev manifest && oclif-dev readme && npm shrinkwrap",
     "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
