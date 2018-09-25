@@ -13,7 +13,7 @@ oval: CLI for (O)penAPI Specification document (val)idation
 
 # Overview
 
-`oval` is an OpenAPI Specification _(OAS)_ document validator that was built to replace the CLI provided by
+`oval` is an OpenAPI 2.0 Specification _(OAS)_ document validator that was built to replace the CLI provided by
 [swagger-tools](https://github.com/apigee-127/swagger-tools).  `oval` is built on top of
 [sway](https://github.com/apigee-127/sway), the successor to the API portion of `swagger-tools`, which provides
 extremely thorough OAS validation.  Plans for `oval` are to provide an [eslint](https://eslint.org/)-like experience for
@@ -79,3 +79,8 @@ OPTIONS
 
 _See code: [lib/commands/validate.js](https://github.com/whitlockjc/oval/blob/v1.0.0/lib/commands/validate.js)_
 <!-- commandsstop -->
+
+## OpenAPI Support
+
+`oval` is built on [`sway`](https://github.com/apigee-127/sway) and thus will support OpenAPI 3.0
+after `sway` has been updated to [support OpenAPI 3.0](https://github.com/apigee-127/sway/issues/128).
