@@ -19,6 +19,8 @@ oval: CLI for (O)penAPI Specification document (val)idation
 extremely thorough OAS validation.  Plans for `oval` are to provide an [eslint](https://eslint.org/)-like experience for
 OAS validation in the future.
 
+Currently Oval supports OpenAPI v2.
+
 <!-- toc -->
 * [Usage](#usage)
 * [Commands](#commands)
