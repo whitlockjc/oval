@@ -13,7 +13,8 @@
     "@oclif/plugin-help": "^2.0.5",
     "chalk": "^2.4.1",
     "json-refs": "^3.0.6",
-    "sway": "^2.0.0"
+    "sway": "^2.0.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1.15.4",
@@ -61,6 +62,9 @@
     "prepack": "oclif-dev manifest && oclif-dev readme && npm shrinkwrap",
     "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
-    "version": "oclif-dev readme && git add README.md"
-  }
+    "version": "oclif-dev readme && git add README.md",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
