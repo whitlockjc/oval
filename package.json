@@ -10,7 +10,7 @@
   "dependencies": {
     "@oclif/command": "^1.4.35",
     "@oclif/config": "^1.6.33",
-    "@oclif/plugin-help": "^2.0.5",
+    "@oclif/plugin-help": "^3.3.0",
     "chalk": "^2.4.1",
     "json-refs": "^3.0.6",
     "sway": "^2.0.0"
